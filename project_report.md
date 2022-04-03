@@ -11,14 +11,14 @@ The top ranked model that performed was the WeightedEnsemble_L3 where we used th
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-Since the datetime feature was already in datetime type, i extracted year, month, day and hour into separate features from the datetime feature and i also converted the type of the features season and weather into category type.
+Since the datetime feature was already in datetime type, i extracted year, month, day and hour into separate features from the datetime feature and i also converted the type of the features season, holiday, workingday and weather into category type.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-After adding the four new features the model grow up from `1.79022` `to 0.68957`. We know that Feature engineering is useful to create a robust dataset and increase the effectiveness of a model.
+After adding the four new features the model grow up from `1.79022` `to 0.69275`. We know that Feature engineering is useful to create a robust dataset and increase the effectiveness of a model.
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-In my case with the hyperparameters the performance drop down to `0.48534` using `GBM` and `NN_TORCH` with a `num_trials` equal to 5. After difference try i add the `XGB` and a `num_trials` equal to 3 the performance grow up to `0.57764`.
+In my case with the hyperparameters the performance drop down to `0.48534` using `GBM` and `NN_TORCH` with a `num_trials` equal to 5. After difference try i add the `XGB` and a `num_trials` equal to 3 the performance grow up to `0.60173`.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 I would spend more time on exploratory data analysis and also try more hyperparameters.
@@ -40,4 +40,4 @@ in this project I was able to apply all the concepts that were covered in this u
 For the second model i did a few exploratory data analysis and feature creation
 by extracting year, month, day and hour into separate features from the datetime feature and i also converted the type of the features season and weather into category type. Then I trained the model and this significant improved by 68%.
 
-For more experience i used hyperparameters for model algorithm which are GBM,	NN and	XGB. After the training the model was decreased by 68%. I think if we spend more time on explanatory data analysis and use more on tuning the model can get better
+For more experience i used hyperparameters for model algorithm which are GBM,	NN and	XGB. After the training the model was decreased by 60%. I think if we spend more time on explanatory data analysis and use more on tuning the model can get better
